@@ -66,9 +66,9 @@ static char	*trim_left(char **out)
 	return (temp);
 }
 
-//	ft_stack reads from the file descriptor until bytes_read < BUFFER_SIZE
-//  or else a newline is encountered. It returns a pointer to allocated memory
-//  which contains a newline character, if it exists, or else the entire file.
+// ft_stack reads from the file descriptor until bytes_read < BUFFER_SIZE
+// or else a newline is encountered. It returns a pointer to allocated memory
+// which contains a newline character, if it exists, or else the entire file.
 char	*ft_stack(char **src, int fd)
 {
 	char	*temp;
@@ -91,8 +91,8 @@ char	*ft_stack(char **src, int fd)
 
 // ft_get_next_line draws from buffer, if it exists, and calls ft_stack. 
 // If ft_stack returns a string with a newline character, get_next_line 
-//	allocates a new buffer, trims the out string, and then returns the trim.
-//	Otherwise, it directly returns the out string.
+// allocates a new buffer, trims the out string, and then returns the trim.
+// Otherwise, it directly returns the out string.
 char	*get_next_line(int fd)
 {
 	static char		*buffer;
